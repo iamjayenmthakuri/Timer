@@ -6,7 +6,7 @@ const initialState = {
   isRunning: false,
 };
 
-const reducer = (state, action) => {
+const reducer = (state: { count: number }, action: { type: any }) => {
   switch (action.type) {
     case "start":
       return { ...state, isRunning: true };
